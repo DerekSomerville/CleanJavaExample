@@ -48,7 +48,7 @@ public class Student {
         System.out.println(totalGrade);
         System.out.println( getFirstInitial()+ " " + getLastName() + " got " + letterGrade);
     }
-    public void cg(){
+    public void calcaulateGrade(){
 
 
         int gradeTotal = calculateTotalGrade(assignmentGrade,assignmentPercentageAllocation);
@@ -58,9 +58,9 @@ public class Student {
     }
 
     public static void main(String[] arg){
-        int[] a = {15,19,18};
-        int[] b = {25,25,50};
-        St st = new St(20012, "Derek Somerville",a,b );
-        st.cg();
+        int[] assigmentGrade = {15,19,18};
+        int[] percentageAllocation = {25,25,50};
+        Student student = new Student(20012, "Derek Somerville",assigmentGrade,percentageAllocation );
+        student.calcaulateGrade();
     }
 }
