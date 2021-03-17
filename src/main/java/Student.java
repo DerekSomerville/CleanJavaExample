@@ -1,3 +1,6 @@
+// A student has a student number, name, grades assignments in a course and percentage allocation for the course.
+// Display the students first initial and last name with their course grade. To calculate the course grade you
+// total each assignment mark times the assignment percentage allocation.
 public class Student {
     private int number;
     private String fullName;
